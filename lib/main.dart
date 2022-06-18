@@ -16,8 +16,11 @@ class MyApp extends StatelessWidget {
       routes: appRoutes,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        colorScheme: const ColorScheme.light(),
-        canvasColor: Color.fromARGB(255, 255, 255, 255),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: Color.fromARGB(255, 130, 162, 255),
+          secondary: Color(0xFFFFC107),
+        ),
+        canvasColor: const Color.fromARGB(255, 230, 236, 255),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
               bodyText1: const TextStyle(
